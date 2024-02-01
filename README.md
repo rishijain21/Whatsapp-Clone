@@ -1,41 +1,90 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<b>WhatsApp clone build using MERN stack</b>
+---
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+#### 🧾 Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Its build using MERN stack and uses <a href='https://socket.io/'>socket.io</a> for realtime messaging, online statuses, typing indicators, notifications etc.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### ✨ Features
 
-### `npm test`
+- [x] User authentication.
+- [x] Search for users to chat with.
+- [x] Chat in realtime with <a href='https://socket.io/'>socket.io</a>.
+- [x] User's realtime online/offline status in private chat.
+- [x] Responsive upto a limit.
+- [x] And most importantly 😎 Feels just like whatsapp-web (or Desktop app).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### ⚙ Tools and Technologies used
 
-### `npm run build`
+###### Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. [React.js](https://reactjs.org/)
+2. [Material-ui](https://mui.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###### Backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. [Node.js](https://nodejs.org/en/)
+2. [Express.js](https://expressjs.com/)
+3. [MongoDB](https://www.mongodb.com/)
+5. [Socket.io](https://socket.io/)
 
-### `npm run eject`
+#### 🛠 Installation and setup
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone the repo to your local machine.
+2. Install the required dependency for server using :
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```javascript
+   cd server
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Install the required dependency for client using :
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```javascript
+   cd client
+   npm install
+   ```
 
+4. Install the required dependency for socket using :
+
+   ```javascript
+   cd socket
+   npm install
+   ```
+
+5. Create a .env file inside the server folder and provide the following environment variables:
+
+   ```
+   DB_USERNAME=<your-db-username>
+   DB_PASSWORD=<your-db-password>
+   
+   ```
+
+6. Start the express server using :
+
+   ```javascript
+   npm start
+   ```
+
+7. Start the react development server using:
+
+   ```javascrip
+   cd client
+   npm start
+   ```
+
+8. Start the socket using:
+
+   ```javascrip
+   cd socket
+   npm start
+   ```
+9 Open your web browser and visit http://localhost:3000 to access the Discord clone. 
+
+
+<p align='center'>
+(If you liked the project, give it star 😃)
+</p>
